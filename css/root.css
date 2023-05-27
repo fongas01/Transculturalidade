@@ -186,8 +186,14 @@ footer img{
 
 
 
+
 /***************  MEDIA QUERY  ******************/
-@media (mIN-width: 328px) {
+@media (min-width: 328px) {
+    footer ul li{
+        font-size: .8rem;
+        display: flex;
+    } 
+
     footer img{
         margin:auto 10px;
         height:40px;
@@ -197,13 +203,13 @@ footer img{
 
 /* Medium devices (tablets, 568px and up)*/
 @media (max-width: 568px) {
-    footer ul li{
+    footer ul{
         font-size: 1rem;
         margin-top: 5px;
     }
 
-    footer p{
-        font-size: .08rem;
+    footer ul{
+        font-size: 1rem;
         display: flex;
     } 
 }
@@ -216,7 +222,7 @@ footer img{
     }
 
     footer ul li{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 8px;
     }
 
