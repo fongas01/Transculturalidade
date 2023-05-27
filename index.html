@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Job</title>
+    <title>Transculturalidade</title>
+
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/01.png" type="image/x-icon">
 
     <!-- BULMA -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
        
-    <!-- Google fonts  -->
-
+    <!-- BOOSTRAP  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    -->
+    
     <!-- JQUERY -->
 
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/b369508ec0.js" crossorigin="anonymous"></script>
 </head>
 
+<body> 
     <!-- CABEÇALHO -->
     <header class="cabecalho">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="nadvbar-bran">
                 <a class="navbar-africa">
-                    <img src="/assets/img/map-Africa.png" width="112" height="28">
+                    <img src="/assets/img/map-Africa.png" width="100" height="28">
                 </a>
 
                 <!-- MENU HAMBURGER -->
@@ -35,19 +40,22 @@
                 </a>
             </div>
 
-            <!-- NOME DO SITE -->
-            <h1 class="name-firma">KABOCO: <span>O alicerce</span></h1>
+            <div>
+                  <!-- NOME DO SITE -->
+                  <h1 class="name-firma">KABOCO <br><span>O alicerce</span></h1>    
+            </div>
+      
           
             <!-- NAVBAR -->
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                      
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="/index.html">
                         <i class="fas  fa-home">
                             Página inicial</i> 
                         </a>
             
-                    <a class="navbar-item">
+                    <a class="navbar-item" id="navbar-item" href="/html/menu/sobre-nos.html" >
                         <i class="fa fa-group"> 
                             Sobre nós
                         </i>
@@ -61,26 +69,25 @@
                     </a>
             
                     <div class="navbar-dropdown menu">
-                        
-                        <a class="navbar-item">
-                            África na ótica do oprimido</i>
+                        <a class="navbar-item" id="navbar-item" href="/html/menu/oticaOprimido.html" >
+                            África na ótica do oprimido
                         </a>
 
-                        <a class="navbar-item">
-                            Conexão holística
+                        <a class="navbar-item" id="navbar-item" href="/html/menu/legadoRoubado.html" >
+                            O legado roubado 
                         </a>
 
-                        <a class="navbar-item">
+                        <a class="navbar-item" id="navbar-item" href="/html/menu/documentario.html" >
                             Documentários
                         </a>
 
-                        <a class="navbar-item">
-                         O legado roubado
+                        <a class="navbar-item" id="navbar-item" href="/html/menu/conexaoHolistica.html" >
+                           Conexão Holística
                         </a>
 
                         <hr class="navbar-divider">
                         
-                        <a class="navbar-item" id="contact">
+                        <a class="navbar-item" id="navbar-item" href="/html/menu/faleConosco.html" >
                             <i class="fa fa-bullhorn">
                                 Fale conosco
                             </i>
@@ -91,8 +98,8 @@
                 <!-- BOTÃO FRUTO-DE-MISSÕES -->
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
+                        <div class="buttons" id="navbar-item">
+                            <a class="button is-primary"  href="/html/menu/missoes.html">
                                 <strong> "Eu sou fruto de Missões"</strong>
                             </a>
                         </div>
@@ -107,15 +114,16 @@
         <div class="card">
             <div class="card-content">
                 <div class="content">
-                    "Até que os leões inventem as suas próprias histórias, <br>
+                    "Enquanto os leões se calarem em relação as suas próprias histórias, <br>
                     os caçadores serão sempre os heróis das narrativas de caça." <br>
-                    <span>Provérbio africano</span>         
+                    <span> Provérbio africano adaptado</span>         
                 </div>
             </div>
         </div>
-        
+    
         <!-- CARDS -->
         <section class="columns">
+            
             <div class="column">
                 <h3 class="column-title">Renascimento</h3>
                 <a href="">
@@ -129,7 +137,7 @@
             </div>
 
             <div class="column">
-                <h3 class="column-title">Gastronomia</h3>
+                <h3 class="column-title">Quitutes</h3>
                 <a href="">
                     <img src="/assets/img/culinaria-afro.jpg" alt="Foto da culinária afro - foto da Netflix, Obtida no site mundo negro">
                 </a>
@@ -138,7 +146,7 @@
                     A comida real fideliza a dieta respeitosa à terra-mãe e a criação divina
                 </p>
             </div>
-
+    
             <div class="column">
                 <h3 class="column-title">Cultura</h3>
                 <a href="">
@@ -223,11 +231,10 @@
                     Reflexão sobre o real propósito do Íde de Cristo sobre às nações e entre os povos
                 </p>
             </div>
-        </section>    
-    </section>
-
-    <!-- WHATSAPP FIXO -->
-    <section class="whatsapp">
+        </section>   
+     
+       <!-- WHATSAPP FIXO -->
+        <section class="whatsapp">
         <div>
             <a class="bd-tw-button button" data-social-network="Whatsapp" data-social-action="whatsapp" data-social-target="https://" target="_blank" href="https://">
                 <span class="icon">
@@ -235,19 +242,28 @@
                 </span>
             </a>
         </div>
+        </section>
+
+        <!-- BTN-VOLTAR -->
+        <a href="/index.html"> 
+            <div class="btn-voltar">
+                <p>Voltar</p>
+            </div>
+        </a>    
     </section>
+
+
+
+
+
 
     <!-- RODAPÉ -->
     <footer>
-        <p> 
-            &copy Copyright - KABOKO - 2023 
-    
-            <span>
-                <img src="/assets/img/map-Africa.png" >
-            </span>
-     
-            Todos os direitos reservados
-        </p>
+        <ul>
+            <li>&copy Copyright - KABOKO - 2023 </li>
+            <img id="logo-img-footer" src="/assets/img/map-Africa.png" >
+            <li>Todos os direitos reservados</li>
+        </ul>
     </footer>
 
     <!-- JAVASCRIPT -->

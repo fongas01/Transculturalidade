@@ -1,3 +1,10 @@
+div h1{
+    background-image: url(/assets/img/luanda.webp);
+}
+
+.name-firma{
+    line-height:45px;
+}
 
 .content{
     font-size: 30px;
@@ -10,15 +17,13 @@
     font-size: 15px;
 }
 
- .column{
-    margin-top: 30px;
+.column{
+    margin:30px;
     background-color: aliceblue;
     height: 340px;
     border: solid 1px transparent;
     border-radius: 0 20% ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    margin:25px 6px auto;
+    text-align: center;
 }
 
 .column h3{
@@ -28,6 +33,12 @@
     text-align: center;
 }
 
+.column img{
+    width:400px;
+    height: 200px;
+    border-top-right-radius: 3%;
+}
+
 .column p{
     text-align: center;
     font-size: 15px;
@@ -35,13 +46,10 @@
     line-height: 18px;
 }
 
-.column img{
-    width:255px ;
-    height: 180px;
-    border-top-right-radius: 3%;
-}
-
 .column figcaption{
-    font-size: 9px; 
+    font-size: 10px; 
     margin-bottom: 5px;
 }
+
+
+

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -13,16 +16,19 @@
 body{
     background-image: url(/assets/img/bg-afro2.avif);
     /*background-repeat: no-repeat;*/
+    
+    /* EXTENDE A FIGURA DO BACKGROUND NO SITE TODO */
+    background-size: cover;
+    width:100%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
 
 .name-firma{
     margin-top: 20px;
     font-family: 'Sigmar', cursive;
     font-size: 50px;
     color: var(--marrom);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .name-firma span{
@@ -31,12 +37,18 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.nadvbar-bran{
+    height: 80px;
+}
+
 .navbar-end .navbar-item a{
+    cursor: pointer;
     background-color: var(--marrom);
 }
 
 .navbar-end .navbar-item a:hover{
     background-color:var(--houver-color);
+
 }
 
 .navbar-dropdown #contact {
@@ -73,34 +85,9 @@ body{
     position: relative;
 }
 
-footer{
-    background-color:var(--bg-color) ;
-    display: flex;
-    height:100px;
-    margin-top: 60px;
-}
-
-footer p{
-   display: flex;
-   justify-content: center;
-   padding-top: 40px;
-   color: rgb(99, 100, 100);
-}
-
-footer img{
-    height:30px;
-    width:30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 50%;
-    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
-    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
-}
-
 .whatsapp{
     z-index:999; 
-    right:10px; 
+    right:25px; 
     top:95px;
     /* posicionar a direita */
     float: right;
@@ -116,6 +103,153 @@ footer img{
     height: 50px;  
 }
 
+.btn-voltar{
+    border:solid 1px transparent;
+    background-color: var(--houver-color);
+    border-radius: 20px;
+    color:var(--bg-color);
+    text-align: center;
+    height: 30px;
+    width: 80px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover{
+    background-color:var(--marrom);
+}
+
+footer{
+    display: flex;
+    background-color:var(--bg-color);
+    height:100px;
+    margin-top: 80px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    color: rgb(141, 141, 141); 
+    padding-top: 2rem;
+}
+
+footer ul li{
+    margin-top: 6px;
+}
+
+footer img{
+    border-radius:50%;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
 
 
 
+/* PÁGINAS ADICIONAIS */
+.card-image{
+    margin-top: 2rem;
+}
+
+/* DESABILITAR QDO AUMENTAR A TELA */
+.name-firma{
+    text-align: center;
+}
+ 
+.card-content{
+    margin-top:5rem;
+    margin-bottom: 2rem;
+}
+
+.container .content{
+    font-size: 20px;
+}
+
+.column{
+   margin-right: 50rem;
+}
+
+.card, .card p{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.content, .card p {
+    text-align: justify;
+}
+
+.btn-voltar{
+    margin-right:20px;
+    }
+
+
+
+
+/***************  MEDIA QUERY  ******************/
+@media (mIN-width: 328px) {
+    footer img{
+        margin:auto 10px;
+        height:40px;
+        width:40px;
+    }
+}
+
+/* Medium devices (tablets, 568px and up)*/
+@media (max-width: 568px) {
+    footer ul li{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    footer p{
+        font-size: .08rem;
+        display: flex;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 990px) { 
+    footer ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul li{
+        font-size: 1.2rem;
+        margin-top: 8px;
+    }
+
+    footer img{
+        margin:auto 15px;
+        height:45px;
+        width:45px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+/*  quebrar as colunas qdo atingir a largura máx de 992*
+@media (max-width: 780px) { 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin:0 auto;
+    gap:10px;
+}
+    
+/* X-Large devices (large desktops, 1200px and up)*
+@media (min-width: 1200px) { 
+    .columns{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+  
+}
+    
+/* XX-Large devices (larger desktops, 1400px and up) *
+@media (min-width: 1400px) { 
+    footer p{
+        font-size: 2rem;
+    }
+}

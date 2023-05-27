@@ -1,0 +1,14 @@
+.media-left img{
+    margin-top: 5px;
+    border-radius:50%;
+}
+
+.img-autor{
+    margin:1.5rem
+}
+
+.img-autor img{
+    width: 70rem;
+    height:450px;
+}
+
