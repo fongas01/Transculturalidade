@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&family=Roboto:ital,wght@1,700&display=swap');
 
 *{
     padding: 0;
@@ -17,7 +17,7 @@ body{
     background-image: url(/assets/img/bg-afro2.avif);
     /*background-repeat: no-repeat;*/
     
-    /* EXTENDE A FIGURA DO BACKGROUND NO SITE TODO */
+    /* ESTENDE A FIGURA DO BACKGROUND NO SITE TODO */
     background-size: cover;
     width:100%;
 }
@@ -33,22 +33,26 @@ body{
 
 .name-firma span{
     font-size: 40px;
-    /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nadvbar-bran{
     height: 80px;
 }
 
+
+.navbar-item{
+    font-size: 20px;
+}
 .navbar-end .navbar-item a{
     cursor: pointer;
     background-color: var(--marrom);
+    color:var(--houver-color);
 }
 
 .navbar-end .navbar-item a:hover{
     background-color:var(--houver-color);
-
+    color:var(--marrom);
 }
 
 .navbar-dropdown #contact {
@@ -62,6 +66,7 @@ body{
 }
 
 .nadvbar-bran .navbar-burger{
+    font-size: 55px;
     top:25px;
     right: 10px;
     float:right;
@@ -88,7 +93,7 @@ body{
 .whatsapp{
     z-index:999; 
     right:25px; 
-    top:95px;
+    top:135px;
     /* posicionar a direita */
     float: right;
     /* fixá-lo na tela */
@@ -107,7 +112,7 @@ body{
     border:solid 1px transparent;
     background-color: var(--houver-color);
     border-radius: 20px;
-    color:var(--bg-color);
+    color:var(--marrom);
     text-align: center;
     height: 30px;
     width: 80px;
@@ -118,6 +123,7 @@ body{
 
 .btn-voltar:hover{
     background-color:var(--marrom);
+    color: var(--houver-color);
 }
 
 footer{
@@ -157,17 +163,8 @@ footer img{
     text-align: center;
 }
  
-.card-content{
-    margin-top:5rem;
-    margin-bottom: 2rem;
-}
-
 .container .content{
     font-size: 20px;
-}
-
-.column{
-   margin-right: 50rem;
 }
 
 .card, .card p{
@@ -189,6 +186,39 @@ footer img{
 
 /***************  MEDIA QUERY  ******************/
 @media (min-width: 328px) {
+    .card{
+        margin-top: 75px;
+    }
+
+    .content p{
+        font-family: 'Permanent Marker', cursive;
+        font-size:20px;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .content span{
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 50px;
+    }
+    
+    .column{
+        margin:30px;
+        background-color: aliceblue;
+        height: 340px;
+        border: solid 1px transparent;
+        border-radius: 0 20% ;
+        text-align: center;
+    }
+
+    .column img{
+        width:350px;
+        height: 200px;
+        border-top-right-radius: 3%;
+    }
+
     footer ul li{
         font-size: .8rem;
         display: flex;
@@ -201,8 +231,13 @@ footer img{
     }
 }
 
+
 /* Medium devices (tablets, 568px and up)*/
 @media (max-width: 568px) {
+    .column img{
+        width:450px; 
+    }  
+    
     footer ul{
         font-size: 1rem;
         margin-top: 5px;
@@ -214,8 +249,17 @@ footer img{
     } 
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 990px) { 
+
+/* Medium devices (tablets, 992px and up)*/
+@media (min-width: 992px) { 
+    .card-content{
+        margin-top:0px;
+    }
+
+    .column img{
+        width:450px;
+    }
+
     footer ul{
         display: flex;
         justify-content: center;
@@ -233,29 +277,33 @@ footer img{
     }
 }
 
-/* Large devices (desktops, 992px and up)*/
-/*  quebrar as colunas qdo atingir a largura máx de 992*
-@media (max-width: 780px) { 
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    margin:0 auto;
-    gap:10px;
-}
-    
-/* X-Large devices (large desktops, 1200px and up)*
+
+/* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-    .columns{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr; 
+    .card{
+        margin-top:15px;
+        margin-bottom: 15px;
     }
 
-  
-}
+    .content p{
+        font-family: 'Permanent Marker', cursive;
+        font-size: 40px;
+        line-height: 50px;
+    }
     
-/* XX-Large devices (larger desktops, 1400px and up) *
-@media (min-width: 1400px) { 
-    footer p{
-        font-size: 2rem;
+    content span{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 5px;
+    }
+    
+    .column{
+        background-color: aliceblue;
+        width:800px;
+        height: 400px;
+    }   
+    
+    .column p{
+       margin-bottom: 100px;
     }
 }

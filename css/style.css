@@ -6,11 +6,8 @@ div h1{
     line-height:45px;
 }
 
-.content{
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    line-height: 35px;
+.content p{
+    padding-top: 15px;
 }
 
 .content span{
@@ -18,9 +15,7 @@ div h1{
 }
 
 .column{
-    margin:30px;
     background-color: aliceblue;
-    height: 340px;
     border: solid 1px transparent;
     border-radius: 0 20% ;
     text-align: center;
@@ -33,21 +28,8 @@ div h1{
     text-align: center;
 }
 
-.column img{
-    width:400px;
-    height: 200px;
-    border-top-right-radius: 3%;
-}
-
-.column p{
-    text-align: center;
-    font-size: 15px;
-    margin: auto 3px;
-    line-height: 18px;
-}
-
 .column figcaption{
-    font-size: 10px; 
+    font-size: 13px; 
     margin-bottom: 5px;
 }
 
